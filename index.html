@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">タマンスシラ</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">タマンスシラ</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/sushilatmg.jpg" alt="sushilatmg picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">こんにちは！私は</p>
+        <h1 class="title">タマンスシラです</h1>
+        <p class="section__text__p2">ITエンジニアを目指している学生です。</p>
+        <div class="btn-container">
+          <div class="btn-container">
+            <button
+            class="btn btn-color-2"
+            onclick="window.open('resume.pdf', '_blank')"
+          >
+            Download CV
+          </button>
+
+        <div id="socials-container">
+          <img
+            src="./assets/githublogo.png"
+            alt="My facebook profile"
+            class="icon"
+            onclick="location.href='https://github.com/sushilatamang111'"
+          />
+          <img
+            src="./assets/linkedinlogo.jpg"
+            alt="My instagram profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/sushila-tamang-24ab57338/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me </h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/image1.jpg"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>experience</h3>
+              <p>2年以上 <br />中学校教師経験</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>education</h3>
+              <p>英語専攻の高校（ネパール）<br />日本語学校（1年間と　IT基礎コース（1年間(日本)</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+              こんにちは、私はタマンスシラ（タマンスシラ）と申します。ネパール出身で、現在日本でITを学んでいる22歳の学生です。主にウェブアプリケーション開発に特化しており、Java、HTML、CSS、データベースなどを学んでいます。
+
+              以前、ネパールで教師として働いていた経験から、問題解決能力やコミュニケーションスキルを養いました。学生一人一人の課題を理解し、適切な解決策を見つける力を身につけることができました。この経験は、IT分野での学びにも大いに役立っています。
+              
+              現在、日本での専門学校に通いながら、アルバイトとしてお客様対応を行い、日本人のチームと共に働いています。この仕事を通じて、異文化間でのコミュニケーション能力やチームワークを深めています。
+              
+              私の目標は、**持続可能な開発目標（SDGs）**の達成を支援するために、IT技術を活用して社会課題の解決に貢献することです。今後も技術力を高め、持続可能な未来の実現に向けたシステムや解決策を提供していきたいと考えています。
+              
+              
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section__text__p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>HTML</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>CSS</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>JavaScript</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Java</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>database</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>c++</h3>
+                  <p>Basic</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          <div class="details-container">
+            <h2 class="experience-sub-title">Web Development</h2>
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>sqllite</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>eclipse</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Visual Studio Code</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/checkmark.png"
+                  alt="Experience icon"
+                  class="icon"
+                />
+                <div>
+                  <h3>Git</h3>
+                  <p>Intermediate</p>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#projects'"
+      />
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+          <div class="about-containers">
+              <div class="details-container color-container">
+                  <div class="article-container">
+                      <img
+                          src="./assets/mypage.jpg"
+                          alt="My page"
+                          class="project-img"
+                      />
+                  </div>
+                  <h2 class="experience-sub-title project-title">my_page</h2>
+                  <div class="btn-container">
+                      <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/sushilatamang111/my_page'"
+                      >
+                          Github
+                      </button>
+                      <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/sushilatamang111/my_page'"
+                      >
+                          Live Demo
+                      </button>
+                  </div>
+              </div>
+              <div class="details-container color-container">
+                  <div class="article-container">
+                      <img
+                          src="./assets/carjava.jpg"
+                          alt="Project 2"
+                          class="project-img"
+                      />
+                  </div>
+                  <h2 class="experience-sub-title project-title">car-shop</h2>
+                  <div class="btn-container">
+                      <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/sushilatamang111/car-shop'"
+                      >
+                          Github
+                      </button>
+                      <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/sushilatamang111/car-shop'"
+                      >
+                          Live Demo
+                      </button>
+                  </div>
+              </div>
+              <div class="details-container color-container">
+                  <div class="article-container">
+                      <img
+                          src="./assets/novel.png"
+                          alt="Project 3"
+                          class="project-img"
+                      />
+                  </div>
+                  <h2 class="experience-sub-title project-title">Novel novel_collection_application</h2>
+                  <div class="btn-container">
+                      <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/sushilatamang111/novel_collection_application'"
+                      >
+                          Github
+                      </button>
+                      <button
+                          class="btn btn-color-2 project-btn"
+                          onclick="location.href='https://github.com/sushilatamang111/novel_collection_application'"
+                      >
+                          Live Demo
+                      </button>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </section>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      />
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">sushilatmg2002@gmail.com</a></p>
+        </div>
+        
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+      <p>Copyright &#169; 2024 sushilatmg. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
