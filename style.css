@@ -307,10 +307,9 @@ section {
 }
 
 /* EXPERIENCE SECTION */
-
 #experience {
   position: relative;
-  background-color: #f1f2f6; 
+  background-color: #f1f2f6;
 }
 
 .experience-sub-title {
@@ -346,33 +345,67 @@ article .icon {
   cursor: default;
 }
 
-/* PROJECTS SECTION */
-
+* PROJECTS SECTION */
 #projects {
   position: relative;
+  padding: 2rem 0; /* Optional: Add padding to create space around the cards */
 }
 
-.color-container {
-  border-color: rgb(163, 163, 163);
-  background: rgb(250, 250, 250);
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Two project cards per row */
+  gap: 2rem; /* Space between the project cards */
+  width: 100%; /* Ensure the container takes up full width */
+  margin: 0 auto; /* Centering the container */
+}
+
+/* Individual project card styles */
+.details-container {
+  padding: 1.5rem;
+  background: white;
+  border-radius: 2rem;
+  border: rgb(53, 53, 53) 0.1rem solid;
+  text-align: center;
+  box-sizing: border-box; /* Ensure padding doesn't affect the width */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .project-img {
-  border-radius: 2rem;
-  width: 90%;
-  height: 90%;
+  width: 100%; /* Ensures the image takes up the full width of the card */
+  height: auto; /* Keeps the image's aspect ratio intact */
+  max-height: 250px; /* Limits the height to avoid stretched images */
+  object-fit: cover; /* Ensures the image covers the space without distortion */
+  border-radius: 1rem; /* Optional: makes image corners rounded */
 }
 
 .project-title {
-  margin: 1rem;
+  margin: 1rem 0;
   color: black;
+  font-size: 1.25rem;
 }
 
 .project-btn {
   color: black;
-  border-color: rgb(163, 163, 163);
+  border: 1px solid rgb(163, 163, 163);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
 }
 
+.project-btn:hover {
+  background-color: rgb(53, 53, 53);
+  color: white;
+}
+
+/* For smaller screens (<= 768px), we adjust to 1 card per row */
+@media (max-width: 768px) {
+  .project-container {
+    grid-template-columns: 1fr; /* One project per row on smaller screens */
+  }
+}
 /* CONTACT */
 
 #contact {
